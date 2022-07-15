@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">UpTodo</string>
+    <string name="skip">SKIP</string>
+    <string name="back">BACK</string>
+    <string name="next">NEXT</string>
+    <string name="item_image">onboarding images</string>
+    <string-array name="onboarding">
+        <item>Manage your tasks</item>
+        <item>You can easily manage all of your daily tasks in DoMe for free</item>
+        <item>Create daily routine</item>
+        <item>In Uptodo  you can create your personalized routine to stay productive</item>
+        <item>Organize your tasks</item>
+        <item>You can organize your daily tasks by adding your tasks into separate categories</item>
+    </string-array>
 </resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_skip_margin_horizontal">24dp</dimen>
+    <dimen name="button_skip_margin_top">24dp</dimen>
+    <dimen name="button_skip_text_size">16sp</dimen>
+    <dimen name="linearLayout_view_pager_container_margin_horizontal">38dp</dimen>
+    <dimen name="dots_indicator_margin_top">50dp</dimen>
+    <dimen name="dots_indicator_corner_radius">56dp</dimen>
+    <dimen name="dots_indicator_size">5dp</dimen>
+    <dimen name="dots_indicator_spacing">4dp</dimen>
+    <dimen name="textView_title_margin_top">50dp</dimen>
+    <dimen name="textView_title_text_size">32sp</dimen>
+    <dimen name="textView_description_margin_top">42dp</dimen>
+    <dimen name="textView_description_text_size">16sp</dimen>
+    <dimen name="button_back_margin_horizontal">24dp</dimen>
+    <dimen name="button_back_margin_bottom">24dp</dimen>
+    <dimen name="button_back_text_size">16sp</dimen>
+    <dimen name="button_next_margin_horizontal">24dp</dimen>
+    <dimen name="button_next_margin_bottom">24dp</dimen>
+    <dimen name="button_next_padding_horizontal">24dp</dimen>
+    <dimen name="button_next_padding_vertical">12dp</dimen>
+    <dimen name="button_next_text_size">16sp</dimen>
+</resources>

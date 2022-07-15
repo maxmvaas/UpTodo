@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <Button
+        android:id="@+id/button_skip"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/button_skip_margin_horizontal"
+        android:layout_marginTop="@dimen/button_skip_margin_top"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/skip"
+        android:textColor="@color/common_text"
+        android:textSize="@dimen/button_skip_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_view_pager_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/linearLayout_view_pager_container_margin_horizontal"
+        app:layout_constraintBottom_toTopOf="@id/button_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_skip">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" />
+
+        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+            android:id="@+id/dots_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dots_indicator_margin_top"
+            app:dotsColor="@color/indicator"
+            app:dotsCornerRadius="@dimen/dots_indicator_corner_radius"
+            app:dotsSize="@dimen/dots_indicator_size"
+            app:dotsSpacing="@dimen/dots_indicator_spacing"
+            app:dotsWidthFactor="5"
+            app:progressMode="true"
+            app:selectedDotColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textView_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/textView_title_margin_top"
+            android:fontFamily="@font/lato_bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textView_title_text_size"
+            tools:text="Manage your tasks" />
+
+        <TextView
+            android:id="@+id/textView_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/textView_description_margin_top"
+            android:textAlignment="center"
+            android:textColor="@color/onboarding_description"
+            android:textSize="@dimen/textView_description_text_size"
+            tools:text="You can easily manage all of your daily tasks in DoMe for free" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_back"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/button_back_margin_horizontal"
+        android:layout_marginBottom="@dimen/button_back_margin_bottom"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/back"
+        android:textColor="@color/common_text"
+        android:textSize="@dimen/button_back_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/button_next_margin_horizontal"
+        android:layout_marginBottom="@dimen/button_next_margin_bottom"
+        android:background="@drawable/main_button_bg"
+        android:fontFamily="@font/lato_regular"
+        android:paddingHorizontal="@dimen/button_next_padding_horizontal"
+        android:paddingVertical="@dimen/button_next_padding_vertical"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_next_text_size"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
