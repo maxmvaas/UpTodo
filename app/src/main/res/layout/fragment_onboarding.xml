@@ -28,15 +28,16 @@
         android:gravity="center"
         android:orientation="vertical"
         android:paddingHorizontal="@dimen/linearLayout_view_pager_container_margin_horizontal"
-        app:layout_constraintBottom_toTopOf="@id/button_back"
+        android:paddingVertical="@dimen/linear_layout_view_pager_container_padding_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_skip">
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal" />
 
         <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
@@ -63,17 +64,21 @@
             android:textSize="@dimen/textView_title_text_size"
             tools:text="Manage your tasks" />
 
-        <TextView
-            android:id="@+id/textView_description"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/textView_description_margin_top"
-            android:textAlignment="center"
-            android:textColor="@color/onboarding_description"
-            android:textSize="@dimen/textView_description_text_size"
-            tools:text="You can easily manage all of your daily tasks in DoMe for free" />
-
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/textView_description_margin_top"
+        android:paddingHorizontal="@dimen/text_view_description_padding_horizontal"
+        android:textAlignment="center"
+        android:textColor="@color/onboarding_description"
+        android:textSize="@dimen/textView_description_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_view_pager_container"
+        tools:text="You can easily manage all of your daily tasks in DoMe for free" />
 
     <Button
         android:id="@+id/button_back"

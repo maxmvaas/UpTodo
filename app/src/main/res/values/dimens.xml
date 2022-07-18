@@ -20,4 +20,6 @@
     <dimen name="button_next_padding_horizontal">24dp</dimen>
     <dimen name="button_next_padding_vertical">12dp</dimen>
     <dimen name="button_next_text_size">16sp</dimen>
+    <dimen name="text_view_description_padding_horizontal">38dp</dimen>
+    <dimen name="linear_layout_view_pager_container_padding_vertical">20dp</dimen>
 </resources>
